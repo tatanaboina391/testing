@@ -15,11 +15,14 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@master
+      
+    - name: Install angular cli
+      run: npm install -g @angular/cli
 
     - name: Install Node.js
       uses: actions/setup-node@master
       with:
-        node-version: '18'
+        node-version: '16'
 
     - name: Install dependencies
       run: npm install
