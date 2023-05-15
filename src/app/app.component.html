@@ -1,0 +1,4 @@
+<h1>App component</h1>
+<h3>message : {{ message }}</h3>
+<button (click)="childMethadcalling()">Parant button</button>
+<app-child [parantData]="data" (childData)="gettingMessage($event)"></app-child>
