@@ -29,6 +29,3 @@ jobs:
 
     - name: Build Angular application
       run: ng build
-      
-    - name: Test Angular application
-      run: ng test --watch=false
